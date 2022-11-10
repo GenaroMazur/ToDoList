@@ -18,10 +18,10 @@ module.exports = {
       userPassword: {
         type: Sequelize.STRING
       },
-      statusId: {
+      roleId: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'Status',
+          model: 'Roles',
           key:'id'
         },
         onDelete: 'SET NULL',
