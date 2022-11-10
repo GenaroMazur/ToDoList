@@ -4,4 +4,7 @@ const router = express.Router()
 const testController = require("./../controllers/testController")
 router.get("/",testController)
 
+const authRoutes = require("./authRouter")
+router.use("/auth",authRoutes)
+
 module.exports = router
