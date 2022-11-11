@@ -10,12 +10,14 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       tittle: {
+        allowNull:false,
         type: Sequelize.STRING
       },
       description: {
         type: Sequelize.TEXT
       },
       taskStatusId: {
+        allowNull:false,
         type: Sequelize.INTEGER,
         references: {
           model: 'taskStatuses',
@@ -28,6 +30,7 @@ module.exports = {
         type: Sequelize.DATE
       },
       userId: {
+        allowNull:false,
         type: Sequelize.INTEGER
       },
       deletedAt: {

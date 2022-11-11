@@ -10,15 +10,20 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       userName: {
+        allowNull:false,
         type: Sequelize.STRING
       },
       email: {
+        allowNull:false,
+        unique: true,
         type: Sequelize.STRING
       },
       userPassword: {
+        allowNull:false,
         type: Sequelize.STRING
       },
       roleId: {
+        allowNull:false,
         type: Sequelize.INTEGER,
         references: {
           model: 'Roles',
