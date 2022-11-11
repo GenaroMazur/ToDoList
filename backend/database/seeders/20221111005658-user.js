@@ -13,7 +13,7 @@ module.exports = {
         userName:"genaro",
         email:"genaromazur@gmail.com",
         userPassword:password,
-        roleId:1,
+        roleId:adminId,
         createdAt:date,
         updatedAt:date
       },
@@ -22,7 +22,7 @@ module.exports = {
         userName:"raul",
         email:"raul@gmail.com",
         userPassword:password,
-        roleId:2,
+        roleId:userId,
         createdAt:date,
         updatedAt:date
       }
