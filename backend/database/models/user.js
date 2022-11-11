@@ -11,14 +11,20 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      this.belongsTo(models.Role)
+      this.belongsTo(models.Role,{
+        "foreingKey":"roleId"
+      })
+      this.hasMany(models.Task,{
+        "foreingKey":"userId",
+        "as":"Task"
+      })
     }
   }
   User.init({
     userName: DataTypes.STRING,
     email: DataTypes.STRING,
     userPassword: DataTypes.STRING,
-    roleId: DataTypes.INTEGER
+    roleId: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'User',
