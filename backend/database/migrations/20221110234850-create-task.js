@@ -17,7 +17,6 @@ module.exports = {
         type: Sequelize.TEXT
       },
       taskStatusId: {
-        allowNull:false,
         type: Sequelize.INTEGER,
         references: {
           model: 'taskStatuses',
