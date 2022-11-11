@@ -7,4 +7,7 @@ router.get("/",testController)
 const authRoutes = require("./authRouter")
 router.use("/auth",authRoutes)
 
+const taskRoutes = require("./taskRouter")
+router.use("/task",taskRoutes)
+
 module.exports = router

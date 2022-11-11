@@ -15,7 +15,6 @@ module.exports = (sequelize, DataTypes) => {
       })
       this.belongsTo(models.TaskStatus,{
         "foreignKey":"taskStatusId",
-        "as":"Status"
       })
     }
   }
