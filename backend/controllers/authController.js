@@ -2,11 +2,11 @@ const { User } = require("./../database/models")
 const bcrypt = require("bcryptjs")
 
 const authController = {
-    login: (req, res)=>{
-        const loginForm = {
-            email:req.body.username,
-            password:req.body.password
-        }
+    login: async (req, res)=>{
+        res.json({
+            status:200,
+            token:req.token
+        })
     },
 
     register: (req, res)=>{

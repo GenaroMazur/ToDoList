@@ -1,4 +1,5 @@
 'use strict';
+const JWT = require("jsonwebtoken")
 const {
   Model
 } = require('sequelize');
@@ -18,6 +19,9 @@ module.exports = (sequelize, DataTypes) => {
         "foreingKey":"userId",
         "as":"Task"
       })
+    }
+    generateAuthToken() {
+      return JWT.sign({ id: this.id }, process.env.SECRET_WORD);
     }
   }
   User.init({
