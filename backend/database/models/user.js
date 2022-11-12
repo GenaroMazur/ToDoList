@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     }
     generateAuthToken() {
       let role
-      if(this.role==1){
+      if(this.roleId==1){
         role="admin"
       }else{
         role="user"
