@@ -9,7 +9,7 @@ This is a simple page aplication with react divided in two parts : backend & fro
     npm i
     npm run build
 
-and then you have to fill in the dotenv file and mount the database with the command:
+and then you have to fill in the dotenv (in backend folder)file and mount the database with the command:
 
     cd backend
     npm run dbBuild
