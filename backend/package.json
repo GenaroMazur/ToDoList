@@ -3,7 +3,8 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
-    "build": "npm install"
+    "build": "npm install",
+    "dbBuild": "sequelize db:create && db:migrate && db:seed:all"
   },
   "keywords": [],
   "dependencies": {
