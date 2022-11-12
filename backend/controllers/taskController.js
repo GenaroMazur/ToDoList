@@ -8,7 +8,7 @@ const taskController = {
     taskList:catchAsync(async (req, res, next) => {
         try{
             const user = req.user
-            const userId = req.query.userId || req.user.id
+            const userId = req.query.userId || user.id
             let condition={userId:userId}
 
             if(user.role=="admin" && req.query.userId==undefined){
@@ -28,28 +28,25 @@ const taskController = {
 
             const count = await Task.count({where:condition})
 
-            if(response.User.id==user.id || user.role == "admin"){
-                endpointResponse({
-                    res,
-                    message:"task received sucefull",
-                    body:{count,response}
-                })
-            }else {
-                endpointResponse({
+            if( req.query.userId && response[0] ){
+                if((response[0].dataValues.userId != user.id) && user.role != "admin"){
+                return endpointResponse({
                     res,
                     code:401,
-                    message:"you don't have permissions"
+                    message:"you don't have permissions",
                 })
-            }
-            endpointResponse({
+            }}
+
+            return endpointResponse({
                 res,
                 message:"tasks received sucefull",
                 body:{
                     count,
-                    tasks:task
+                    tasks:response
                 }
             })
         } catch(err){
+            console.log(err);
             const httpError = createHttpError(
                 err.statusCode,
                 `[Error retrieving index] - [index - GET]: ${err.message}`

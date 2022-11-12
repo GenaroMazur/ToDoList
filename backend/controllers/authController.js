@@ -7,7 +7,6 @@ const createHttpError = require("http-errors");
 const authController = {
     login: catchAsync(async (req, res, next) => {
         try{
-            console.log(req.token);
             endpointResponse({
                 res,
                 status:200,
@@ -15,6 +14,7 @@ const authController = {
                 body:req.token
             })
         } catch(err){
+            
             const httpError = createHttpError(
                 err.statusCode,
                 `[Error retrieving index] - [index - GET]: ${err.message}`

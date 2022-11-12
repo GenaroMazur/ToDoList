@@ -21,7 +21,13 @@ module.exports = (sequelize, DataTypes) => {
       })
     }
     generateAuthToken() {
-      return JWT.sign({ id: this.id }, process.env.SECRET_WORD);
+      let role
+      if(this.role==1){
+        role="admin"
+      }else{
+        role="user"
+      }
+      return JWT.sign({ id: this.id, role}, process.env.SECRET_WORD,{expiresIn:"5h"});
     }
   }
   User.init({
