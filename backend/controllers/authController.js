@@ -7,12 +7,12 @@ const createHttpError = require("http-errors");
 const authController = {
     login: catchAsync(async (req, res, next) => {
         try{
-
+            console.log(req.token);
             endpointResponse({
                 res,
                 status:200,
                 message:"login user sucefull",
-                token:req.token
+                body:req.token
             })
         } catch(err){
             const httpError = createHttpError(
