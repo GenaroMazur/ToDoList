@@ -1,0 +1,47 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #3FAFFF;
+    padding: 0px 3vh;
+    height:  3.2em;
+}
+
+.logoHeader{
+    height: 9em;
+    position: relative;
+    bottom: -30px;
+}
+
+.buttonsHeader>*{
+    margin: 8px;
+    padding: 0.5rem 2.6rem;
+    border-radius: 3px;
+    border: solid 1px #3FAFFF;
+
+}
+.doneHeader{
+    color: black;
+}
+
+#tittle{
+    color: #7c7c7c;
+}
+
+#buttonLogin{
+    color: #f7f7f7;
+    background-color: #3FAFFF;
+}
+#buttonLogin:hover{
+    color: #f7f7f7;
+    background-color: #1b91e6;
+}
+
+#buttonSignIn{
+    color: #3FAFFF;
+    background-color: white;
+}
+#buttonSignIn:hover{
+    color:#3FAFFF;
+    background-color: #eeeeee;
+}
