@@ -1,4 +1,4 @@
-const { Task, sequelize } = require("./../database/models")
+const { TaskStatus ,Task, sequelize } = require("./../database/models")
 const { endpointResponse } = require("../helpers/success");
 const { catchAsync } = require("../helpers/catchAsync");
 const createHttpError = require("http-errors");
@@ -37,12 +37,15 @@ const taskController = {
                     })
                 }
             }
+            
+            const categories = await TaskStatus.findAll({attributes:["id","status","description"]})
 
             return endpointResponse({
                 res,
                 message: "tasks received sucefull",
                 body: {
                     count,
+                    categories,
                     tasks: response
                 }
             })
