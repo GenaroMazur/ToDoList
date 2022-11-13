@@ -206,7 +206,25 @@ const taskController = {
             );
             next(httpError);
         }
-    })
+    }),
+    taskRestore:catchAsync(async (req, res, next) => {
+        try {
+            //require an array
+            const taskIds = JSON.parse(req.body.ids)
+            const response = await Task.restore({where:{id:taskIds}})
+            endpointResponse({
+                res,
+                message: "task restored sucefull",
+                body: response
+            })
+        } catch (error) {
+            const httpError = createHttpError(
+                error.statusCode,
+                `[Error retrieving index] - [index - GET]: ${error.message}`
+            );
+            next(httpError);
+        }
+        })
 }
 
 module.exports = taskController
