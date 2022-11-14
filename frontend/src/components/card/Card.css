@@ -1,0 +1,10 @@
+.card{
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px 6px;
+    width: 200px;
+    margin: 5px;
+}
+.colorCard{
+    border-radius:9px 9px 3px 3px
+}

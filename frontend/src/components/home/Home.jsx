@@ -1,5 +1,6 @@
 import "./Home.css"
 import spaceShip from "./../../designs/spaceShip.png"
+import Card from "./../card/Card"
 function Home(){
     return (
     <div className="backHome">
@@ -18,12 +19,12 @@ function Home(){
         </div>
         <div className="section cards">
             <div className="cardsText">
-                <h3>presented</h3>
+                <h3>Presented</h3>
                 <p>in simple check-able cards with description for a nice and friendly interface</p>
             </div>
             <div className="cards">
-                <div className="card"></div>
-                <div className="card"></div>
+                <Card color="Red" tittle="ir al dentista" description="tengo que ir o sino se me pudre" date="2022-03-01"/>
+                <Card/>
             </div>
         </div>
         <div className="section workTable">

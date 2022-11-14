@@ -47,6 +47,8 @@
 
 .cards{
     background-color: #3FAFFF;
+    display: flex;
+    
 }
 .cardsText{
     width: 33.33%;
