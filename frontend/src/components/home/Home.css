@@ -1,0 +1,54 @@
+.backHome{
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+.home{
+    width: 95vw;
+    background-color: white;
+    box-shadow: #9b9b9b 0px 0px 9px
+}
+.section{
+    height: 55vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.spaceShipLogo{
+    height: 16vw;
+    transform: rotate(-45deg);
+    filter: contrast(0.7);
+    max-height: 130px;
+    min-height: 80px;
+}
+.spaceShipDiv{
+    display: flex;
+    align-items: center;
+}
+.spaceStart{
+    color: #f7f7f7;
+    background-color: #3FAFFF;
+    margin: 8px;
+    padding: 0.5rem 2.6rem;
+    border-radius: 3px;
+    border: solid 1px #3FAFFF;
+}
+.spaceStart:hover{
+        color: #f7f7f7;
+        background-color: #1b91e6;
+}
+.spaceShipText>h3{
+    margin: 0px 20px 0px 0px;
+}
+
+.cards{
+    background-color: #3FAFFF;
+}
+.cardsText{
+    width: 33.33%;
+    color: white;
+}

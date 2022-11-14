@@ -1,10 +1,11 @@
 .header{
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     border-bottom: 5px solid #3FAFFF;
     padding: 0px 3vh;
-    height:  3.2em;
+    height: 3.2em;
 }
 
 .logoHeader{
@@ -26,6 +27,7 @@
 
 #tittle{
     color: #7c7c7c;
+    white-space: nowrap;
 }
 
 #buttonLogin{
