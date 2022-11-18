@@ -53,4 +53,6 @@
 .cardsText{
     width: 33.33%;
     color: white;
+    font-size: 20px;
+    margin-right: 50px;
 }

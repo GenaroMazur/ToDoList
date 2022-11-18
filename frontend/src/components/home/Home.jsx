@@ -24,7 +24,7 @@ function Home(){
             </div>
             <div className="cards">
                 <Card color="Red" tittle="ir al dentista" description="tengo que ir o sino se me pudre" date="2022-03-01"/>
-                <Card/>
+                <Card tittle="Hacer tarea" description="tarea de fisica del colegio" date="2022-05-05"/>
             </div>
         </div>
         <div className="section workTable">

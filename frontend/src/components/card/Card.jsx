@@ -18,9 +18,9 @@ function Card(props){
                 <div className="cardDescription">
                     <p>{props.description}</p>
                 </div>
-                <div className="cardDate">
-                    <p>{props.date}</p>
-                </div>
+            </div>
+            <div className="cardDate">
+                <p>{props.date}</p>
             </div>
         </div>
     )
