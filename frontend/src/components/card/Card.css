@@ -1,5 +1,6 @@
 .card{
     background-color: white;
+    position: relative;
     border-radius: 15px;
     padding: 5px 6px;
     width: 200px;
@@ -7,7 +8,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    box-shadow: #0000001a 1px 1px 5px 2px;
+    transition: all 0.5s;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card:hover .cardDescription{
+    opacity: 1;
+    max-height: 300px;
 }
 .colorCard{
     border-radius:9px 9px 3px 3px
@@ -18,4 +27,10 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 0px 10px
+}
+
+.cardDescription{
+    opacity: 0;
+    transition: max-height 900ms, opacity 500ms;
+    max-height: 0px;
 }

@@ -56,3 +56,17 @@
     font-size: 20px;
     margin-right: 50px;
 }
+
+.workTableDivisions{
+    display: flex;
+}
+.workTable{
+    display: flex;
+    justify-content: space-around;
+}
+
+.divisonWorkTable{
+    border: dotted black 1px ;
+    border-radius: 10px;
+    margin: 5px 10px;
+}

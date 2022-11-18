@@ -29,15 +29,22 @@ function Home(){
         </div>
         <div className="section workTable">
             <div className="workTableDivisions">
+            
             <div className="divisonWorkTable">
-
+                <Card color="violet" tittle="lorem ipsum" description="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"/>
+                <Card color="yellow" tittle="lorem ipsum" description="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"/>
             </div>
+
+            <div className="divisonWorkTable" >
+                <Card color="green" tittle="lorem ipsum" description="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"/>
+                <Card tittle="lorem ipsum" description="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"/>
+                <Card color="green" tittle="lorem ipsum" description="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"/>
+            </div>
+
             <div className="divisonWorkTable">
-
+                <Card tittle="lorem ipsum" description="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"/>
             </div>
-            <div className="divisonWorkTable">
 
-            </div>
             </div>
             <div className="worckTableText">
                 <h3>Organizated</h3>
