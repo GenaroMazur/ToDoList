@@ -33,6 +33,7 @@
 #buttonLogin{
     color: #f7f7f7;
     background-color: #3FAFFF;
+    transition: all 0.25s;
 }
 #buttonLogin:hover{
     color: #f7f7f7;
@@ -42,6 +43,7 @@
 #buttonSignIn{
     color: #3FAFFF;
     background-color: white;
+    transition: all 0.25s;
 }
 #buttonSignIn:hover{
     color:#3FAFFF;
