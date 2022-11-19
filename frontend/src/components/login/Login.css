@@ -1,0 +1,65 @@
+.loginRegister{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 90vh;
+}
+.loginRegister> * >form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45vw;
+}
+.loginRegister>*{
+    display: flex;
+    transition: all 1s;
+}
+.ocultar{
+    transition: all 0s;
+    opacity: 0;
+    max-width: 0;
+}
+form>input{
+    margin-bottom: 20px;
+    padding: 5px 10px;
+}
+
+.buttonForm{
+    background-color: #3FAFFF;
+    border: 0px;
+    border-radius: 3px;
+    padding: 0.5rem 2.6rem;
+    color: white;
+    transition: all 0.25s;
+}
+
+.buttonForm:hover{
+    color: #f7f7f7;
+    background-color: #1b91e6;
+}
+
+.showLogin, .showRegister{
+    color: #3FAFFF;
+    background-color: white;
+    transition: all 0.25s;
+    padding: 0.7rem 3.6rem;
+    border-radius: 3px;
+    border: solid 1px #3FAFFF;
+}
+.showLogin:hover, .showRegister:hover{
+    color: #f7f7f7;
+    background-color: #1683d1;
+}
+
+.buttonConten{
+    width: 40vw;
+    justify-content: center;
+    height: 67%;
+    align-items: center;
+    background-color: #3FAFFF;
+    margin: 2px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px -2px;
+}
